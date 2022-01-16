@@ -1,0 +1,129 @@
+/* font-family
+color
+font-size
+line-height
+font-weight
+button pointer */
+
+body {
+  font-family: Roboto, sans-serif;
+  color: #212121;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+}
+.link_footer {
+  color: rgba(255, 255, 255, 0.6);
+}
+.link:hover {
+  color: #2196f3;
+}
+.link_logo {
+  font-family: Raleway, serif;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo_left_side {
+  color: #2196f3;
+}
+.logo_header_right_side {
+  color: #2f303a;
+}
+.logo_footer_right_side {
+  color: #ffffff;
+}
+
+.nav,
+.header_contact {
+  font-weight: 500;
+}
+
+.link_menu_right {
+  color: #757575;
+}
+
+.button {
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 1.62;
+  background-color: #f5f4fa;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #2196f3;
+  color: white;
+}
+
+.button_slider {
+  cursor: pointer;
+  line-height: 1.87;
+  background-color: #2196f3;
+  font-size: 16px;
+}
+
+.header_1 {
+  color: white;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.header_2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+}
+.header_3 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.14;
+}
+.paragraph {
+  color: #757575;
+  line-height: 1.71;
+}
+
+.list_item_upper {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+.list_item_lower {
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.list_crew_upper {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.list_crew_lower {
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.slider,
+.footer {
+  background: #2f303a; /*Na białym tle nie widać tekstu*/
+}
+.footer_contact_info {
+  color: #ffffff;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.team {
+  background: #f5f4fa;
+}
+
+.list_crew {
+  background: white;
+}

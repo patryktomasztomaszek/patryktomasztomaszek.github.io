@@ -5,56 +5,74 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
-      <a href="/">WebStudio</a>
+      <a class="link link_logo" href="/"
+        ><span class="logo_left_side">Web</span
+        ><span class="logo_header_right_side">studio</span></a
+      >
       <nav>
-        <ul>
-          <li><a href="/">Agencja</a></li>
-          <li><a href="/">Portfolio</a></li>
-          <li><a href="/">Kontakt</a></li>
+        <ul class="nav">
+          <li><a class="link link_menu_left" href="index.html">Agencja</a></li>
+          <li>
+            <a class="link link_menu_left" href="portfolio.html">Portfolio</a>
+          </li>
+          <li><a class="link link_menu_left" href="/">Kontakt</a></li>
         </ul>
-        <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+48111111111"></a>+48 111 111 111</li>
+        <ul class="header_contact">
+          <li>
+            <a class="link link_menu_right" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="link link_menu_right" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
-        <h1>Efektywne rozwiązania dla waszego biznesu</h1>
-        <button type="button">Zamów usługe</button>
+      <section class="slider">
+        <h1 class="header_1">Efektywne rozwiązania dla waszego biznesu</h1>
+        <button class="button_slider" type="button">Zamów usługe</button>
       </section>
 
       <section>
         <ul>
           <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+            <h3 class="header_3">LOREM IPSUM</h3>
+            <p class="paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malescuada
             </p>
           </li>
           <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+            <h3 class="header_3">LOREM IPSUM</h3>
+            <p class="paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malescuada
             </p>
           </li>
           <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+            <h3 class="header_3">LOREM IPSUM</h3>
+            <p class="paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malescuada
             </p>
           </li>
           <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+            <h3 class="header_3">LOREM IPSUM</h3>
+            <p class="paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malescuada
             </p>
@@ -63,14 +81,14 @@
       </section>
 
       <section>
-        <h2>Czym się zajmujemy</h2>
+        <h2 class="header_2">Czym się zajmujemy</h2>
         <ul>
           <li>
             <img
               src="images/img1.webp"
               width="370"
               height="294"
-              alt="Praca za pomocą komputera i tableta"
+              alt="Work on a tablet"
             />
           </li>
           <li>
@@ -78,7 +96,7 @@
               src="images/img2.webp"
               width="370"
               height="294"
-              alt="Praca za pomocą laptopa i smartfona"
+              alt="Work on a phone and notebook"
             />
           </li>
           <li>
@@ -86,82 +104,86 @@
               src="images/img3.webp"
               width="370"
               height="294"
-              alt="Paleta kolorów na tablecie"
+              alt="Color palette on tablet"
             />
           </li>
         </ul>
       </section>
 
-      <section>
-        <h2>Nasz zespół</h2>
+      <section class="team">
+        <h2 class="header_2">Nasz zespół</h2>
         <ul>
           <li>
-            <figure>
+            <figure class="list_crew">
               <img
                 src="images/person1.webp"
                 width="270"
                 height="260"
-                alt="Mężczyzna w koszuli i okularach product designer"
+                alt="Man in shirt and glasses product designer"
               />
               <figcaption>
-                <p>John Doe</p>
-                <p>Product Designer</p>
+                <p class="list_crew_upper">John Doe</p>
+                <p class="list_crew_lower">Product Designer</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="list_crew">
               <img
                 src="images/person2.webp"
                 width="270"
                 height="260"
-                alt="Kobieta w marynarce i okularach frontend developer"
+                alt="Women in suit and glasses frontend developer"
               />
               <figcaption>
-                <p>John Doe</p>
-                <p>Frontend Developer</p>
+                <p class="list_crew_upper">John Doe</p>
+                <p class="list_crew_lower">Frontend Developer</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="list_crew">
               <img
                 src="images/person3.webp"
                 width="270"
                 height="260"
-                alt="Mężczyzna w koszuli marketing"
+                alt="Men in shirt marketing"
               />
               <figcaption>
-                <p>John Doe</p>
-                <p>Marketing</p>
+                <p class="list_crew_upper">John Doe</p>
+                <p class="list_crew_lower">Marketing</p>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="list_crew">
               <img
                 src="images/person4.webp"
                 width="270"
                 height="260"
-                alt="Mężczyzna w podkoszulku i okularach UI designer"
+                alt="Man in shirt and glasses UI designer"
               />
               <figcaption>
-                <p>John Doe</p>
-                <p>UI Designer</p>
+                <p class="list_crew_upper">John Doe</p>
+                <p class="list_crew_lower">UI Designer</p>
               </figcaption>
             </figure>
           </li>
         </ul>
       </section>
-
-      <footer>
-        <a href="/">WebStudio</a>
-        <address>
-          <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-          <a href="mailto:info@example.com">info@example.com</a>
-          <a href="tel:+48111111111">+48 111 111 111</a>
-        </address>
-      </footer>
     </main>
+    <footer class="footer">
+      <a class="link link_logo" href="/"
+        ><span class="logo_left_side">Web</span
+        ><span class="logo_footer_right_side">studio</span></a
+      >
+      <address class="footer_contact_info">
+        <p>m. Warszawa, Aleje Jerozolimskie 21</p>
+        <a class="link link_footer" href="mailto:info@example.com"
+          >info@example.com</a
+        >
+        <a class="link link_footer" href="tel:+48111111111">+48 111 111 111</a>
+      </address>
+    </footer>
   </body>
 </html>
