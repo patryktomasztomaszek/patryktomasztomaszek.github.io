@@ -1,15 +1,81 @@
-/* font-family
-color
-font-size
-line-height
-font-weight
-button pointer */
+/* Style reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
 
+.list {
+  list-style: none;
+}
+/* Style reset end */
+
+/* Global */
 body {
+  margin: 0;
   font-family: Roboto, sans-serif;
   color: #212121;
 }
 
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.button {
+  border: 0;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+
+  background-color: #f5f4fa;
+}
+.button:hover {
+  background-color: #2196f3;
+  color: white;
+}
+
+.header_1 {
+  color: white;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+h2,
+h3,
+p {
+  letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+}
+
+/* Global end */
+
+/* Header */
 .link {
   text-decoration: none;
   font-style: normal;
@@ -22,9 +88,12 @@ body {
   color: #2196f3;
 }
 .link_logo {
+  align-self: center;
   font-family: Raleway, serif;
   font-size: 26px;
   line-height: 1.19;
+  margin-right: 93px;
+  letter-spacing: 0.03em;
 }
 
 .logo_left_side {
@@ -37,9 +106,44 @@ body {
   color: #ffffff;
 }
 
+.header .container {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
 .nav,
+.menu {
+  align-self: center;
+}
+
+.menu,
 .header_contact {
   font-weight: 500;
+  align-self: center;
+}
+
+.header_contact {
+  margin: 0 0 0 auto;
+}
+
+.header-contact-item {
+  margin-right: 50px;
+  letter-spacing: 0.02em;
+}
+
+.menu-item,
+.header-contact-item {
+  display: inline-block;
+}
+
+.menu-item {
+  margin-right: 46px;
+}
+
+.menu-item:last-child,
+.header-contact-item:last-child {
+  margin: 0;
 }
 
 .link_menu_left {
@@ -49,86 +153,214 @@ body {
 .link_menu_right {
   color: #757575;
 }
+.header {
+  border-bottom: 1px solid #ececec;
+}
+/* Header end */
+/* Slider */
+.slider {
+  display: flex;
+  height: 600px;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 
-.button {
-  cursor: pointer;
-  font-weight: 500;
-  line-height: 1.62;
-  background-color: #f5f4fa;
-  font-size: 16px;
+  background: #2f303a;
 }
 
-.button:hover {
-  background-color: #2196f3;
-  color: white;
+.slider_header {
+  width: 696px;
+  align-self: auto;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  margin-bottom: 30px;
 }
 
 .button_slider {
+  margin: 0 auto;
   cursor: pointer;
   line-height: 1.87;
+
   background-color: #2196f3;
   color: #ffffff;
+
   font-size: 16px;
+  font-weight: 700;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 42px;
+}
+/* Slider end */
+
+/* Paragraphs section */
+.paragraphs {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  list-style-type: none;
+}
+.paragraphs-item {
+  display: block;
 }
 
-.header_1 {
-  color: white;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-transform: uppercase;
+.paragraphs-item:first-child {
+  margin-right: 0;
 }
-.header_2 {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
+.paragraphs-item:last-child {
+  margin-left: 0;
 }
 .header_3 {
   font-size: 14px;
   font-weight: bold;
   line-height: 1.14;
+  margin-bottom: 10px;
 }
 .paragraph {
+  font-size: 14px;
   color: #757575;
   line-height: 1.71;
 }
-
-.list_item_upper {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+/* Paragraphs section end */
+/* What we do */
+.header_2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  margin-bottom: 50px;
 }
-.list_item_lower {
-  color: #757575;
-  font-size: 16px;
-  line-height: 1.87;
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.images_item {
+  display: inline-block;
+  margin: 0 15px;
+}
+/* What we do end */
+/* Crew */
+
+.team {
+  background: #f5f4fa;
 }
 
+.crew {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.crew_member {
+  margin: 0 15px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.crew_member_figure {
+  margin: 0;
+}
+.crew_member_description {
+  text-align: center;
+}
 .list_crew_upper {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+
+  margin: 30px 0 10px 0;
 }
 .list_crew_lower {
   color: #757575;
   font-size: 16px;
   line-height: 1.19;
-}
 
-.slider,
+  margin: 10px 0 30px 0;
+}
+/* Crew end */
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px;
+  margin: 0 4px;
+  letter-spacing: 0.03em;
+}
+.button:hover {
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+/* Button end */
+/* Portfolio */
+.portfolio {
+  margin-bottom: 94px;
+}
+.section_portfolio {
+  padding-bottom: 50px;
+}
+.list {
+  display: flex;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+.list_item {
+  margin: 0 0 30px 0;
+}
+.list_item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.list_description {
+  border: 1px solid #eeeeee;
+}
+.list_description_upper {
+  padding: 24px 0 0 24px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  color: #212121;
+}
+.list_description_lower {
+  padding: 9px 0 24px 24px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+/* Portfolio end */
+/* Footer */
 .footer {
-  background: #2f303a; /*Na białym tle nie widać tekstu*/
+  background: #2f303a;
+}
+.footer_wrapper {
+  padding: 60px 0 60px 15px;
+}
+.footer_contact_info {
+  margin-top: 30px;
+}
+.address_footer {
+  margin: 9px 0;
+}
+.link_footer p {
+  margin: 9px 0;
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer_contact_info {
   color: #ffffff;
   font-size: 14px;
   font-style: normal;
 }
-
-.team {
-  background: #f5f4fa;
-}
-
-.list_crew {
-  background: white;
-}
+/* Footer end */
+/* My CSS is catastrpohic garbage, i know ;( */

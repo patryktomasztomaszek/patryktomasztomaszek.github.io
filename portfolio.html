@@ -1,197 +1,203 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
+    <title>Studio</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <header>
-      <a class="link link_logo" href="/"
-        ><span class="logo_left_side">Web</span
-        ><span class="logo_header_right_side">Studio</span></a
-      >
-      <nav>
-        <ul class="nav">
-          <li><a class="link link_menu_left" href="index.html">Agencja</a></li>
-          <li>
-            <a class="link link_menu_left" href="portfolio.html">Portfolio</a>
-          </li>
-          <li><a class="link link_menu_left" href="/">Kontakt</a></li>
-        </ul>
+    <header class="header">
+      <div class="container">
+        <a class="link link_logo" href="/"
+          ><span class="logo_left_side">Web</span
+          ><span class="logo_header_right_side">Studio</span></a
+        >
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu-item">
+              <a class="link link_menu_left" href="index.html">Agencja</a>
+            </li>
+            <li class="menu-item">
+              <a class="link link_menu_left" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu-item">
+              <a class="link link_menu_left" href="/">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
         <ul class="header_contact">
-          <li>
+          <li class="header-contact-item">
             <a class="link link_menu_right" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="header-contact-item">
             <a class="link link_menu_right" href="tel:+48111111111"
               >+48 111 111 111</a
             >
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
+
     <main>
-      <section>
-        <ul>
-          <li><button class="button" type="button">Wszystkie</button></li>
-          <li><button class="button" type="button">Strony</button></li>
-          <li><button class="button" type="button">Aplikacje</button></li>
-          <li><button class="button" type="button">Dizajn</button></li>
-          <li><button class="button" type="button">Marketing</button></li>
-        </ul>
+      <section class="section section_portfolio">
+        <div class="container">
+          <ul class="list buttons">
+            <li><button class="button" type="button">Wszystkie</button></li>
+            <li><button class="button" type="button">Strony</button></li>
+            <li><button class="button" type="button">Aplikacje</button></li>
+            <li><button class="button" type="button">Dizajn</button></li>
+            <li><button class="button" type="button">Marketing</button></li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <ul>
-          <li>
-            <figure class="list_item">
+      <section class="portfolio">
+        <div class="container">
+          <ul class="list">
+            <li class="list_item">
               <img
                 src="images/img4.webp"
                 width="370"
                 height="294"
                 alt="Techhnocrack website"
               />
-              <figcaption>
-                <p class="list_item_upper">Technocrack</p>
-                <p class="list_item_lower">Strona internetowa</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="list_item">
+              <div class="list_description">
+                <p class="list_description_upper">Technocrack</p>
+                <p class="list_description_lower">Strona internetowa</p>
+              </div>
+            </li>
+            <li class="list_item">
               <img
                 src="images/img5.webp"
                 width="370"
                 height="294"
                 alt="Image of two basketball players"
               />
-              <figcaption>
-                <p class="list_item_upper">Grafika New Orlean vs Golden Star</p>
-                <p class="list_item_lower">Dizajn</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="list_item">
+              <div class="list_description">
+                <p class="list_description_upper">
+                  Grafika New Orlean vs Golden Star
+                </p>
+                <p class="list_description_lower">Dizajn</p>
+              </div>
+            </li>
+            <li class="list_item">
               <img
                 src="images/img6.webp"
                 width="370"
                 height="294"
                 alt="Seafood restaurant logo"
               />
-              <figcaption>
-                <p class="list_item_upper">Restauracja Seafood</p>
-                <p class="list_item_lower">Aplikacja</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="list_item">
+              <div class="list_description">
+                <p class="list_description_upper">Restauracja Seafood</p>
+                <p class="list_description_lower">Aplikacja</p>
+              </div>
+            </li>
+            <li class="list_item">
               <img
                 src="images/img7.webp"
                 width="370"
                 height="294"
                 alt="Headphones"
               />
-              <figcaption>
-                <p class="list_item_upper">Projekt Prime</p>
-                <p class="list_item_lower">Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="list_item">
+              <div class="list_description">
+                <p class="list_description_upper">Projekt Prime</p>
+                <p class="list_description_lower">Marketing</p>
+              </div>
+            </li>
+            <li class="list_item">
               <img
                 src="images/img8.webp"
                 width="370"
                 height="294"
                 alt="White and bronze boxes"
               />
-              <figcaption>
-                <p class="list_item_upper">Projekt Boxes</p>
-                <p class="list_item_lower">Aplikacja</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="list_item">
+              <div class="list_description">
+                <p class="list_description_upper">Projekt Boxes</p>
+                <p class="list_description_lower">Aplikacja</p>
+              </div>
+            </li>
+            <li class="list_item">
               <img
                 src="images/img9.webp"
                 width="370"
                 height="294"
                 alt="Apple monitor"
               />
-              <figcaption>
-                <p class="list_item_upper">Inspiration has no Borders</p>
-                <p class="list_item_lower">Strona Internetowa</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="list_item">
+              <div class="list_description">
+                <p class="list_description_upper">Inspiration has no Borders</p>
+                <p class="list_description_lower">Strona Internetowa</p>
+              </div>
+            </li>
+            <li class="list_item">
               <img
                 src="images/img10.webp"
                 width="370"
                 height="294"
                 alt="Book with images"
               />
-              <figcaption>
-                <p class="list_item_upper">Magazyn Limited Edition</p>
-                <p class="list_item_lower">Dizajn</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="list_item">
+              <div class="list_description">
+                <p class="list_description_upper">Magazyn Limited Edition</p>
+                <p class="list_description_lower">Dizajn</p>
+              </div>
+            </li>
+            <li class="list_item">
               <img
                 src="images/img11.webp"
                 width="370"
                 height="294"
                 alt="Tag with text"
               />
-              <figcaption>
-                <p class="list_item_upper">Projekt LAB</p>
-                <p class="list_item_lower">Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="list_item">
+              <div class="list_description">
+                <p class="list_description_upper">Projekt LAB</p>
+                <p class="list_description_lower">Marketing</p>
+              </div>
+            </li>
+            <li class="list_item">
               <img
                 src="images/img12.webp"
                 width="370"
                 height="294"
                 alt="Work on notebook"
               />
-              <figcaption>
-                <p class="list_item_upper">Growing Business</p>
-                <p class="list_item_lower">Aplikacja</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+              <div class="list_description">
+                <p class="list_description_upper">Growing Business</p>
+                <p class="list_description_lower">Aplikacja</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a class="link link_logo" href="/"
-        ><span class="logo_left_side">Web</span
-        ><span class="logo_footer_right_side">Studio</span></a
-      >
-      <address class="footer_contact_info">
-        <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-        <a class="link link_footer" href="mailto:info@example.com"
-          >info@example.com</a
-        >
-        <a class="link link_footer" href="tel:+48111111111">+48 111 111 111</a>
-      </address>
+      <div class="container">
+        <div class="footer_wrapper">
+          <a class="link link_logo logo_footer" href="/"
+            ><span class="logo_left_side">Web</span
+            ><span class="logo_footer_right_side">Studio</span></a
+          >
+          <address class="footer_contact_info">
+            <p class="address_footer">m. Warszawa, Aleje Jerozolimskie 21</p>
+            <a class="link link_footer" href="mailto:info@example.com"
+              ><p>info@example.com</p></a
+            >
+            <a class="link link_footer" href="tel:+48111111111"
+              ><p>+48 111 111 111</p></a
+            >
+          </address>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

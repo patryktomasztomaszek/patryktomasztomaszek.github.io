@@ -5,6 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -13,177 +17,197 @@
   </head>
 
   <body>
-    <header>
-      <a class="link link_logo" href="/"
-        ><span class="logo_left_side">Web</span
-        ><span class="logo_header_right_side">Studio</span></a
-      >
-      <nav>
-        <ul class="nav">
-          <li><a class="link link_menu_left" href="index.html">Agencja</a></li>
-          <li>
-            <a class="link link_menu_left" href="portfolio.html">Portfolio</a>
-          </li>
-          <li><a class="link link_menu_left" href="/">Kontakt</a></li>
-        </ul>
+    <header class="header">
+      <div class="container">
+        <a class="link link_logo" href="/"
+          ><span class="logo_left_side">Web</span
+          ><span class="logo_header_right_side">Studio</span></a
+        >
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu-item">
+              <a class="link link_menu_left" href="index.html">Agencja</a>
+            </li>
+            <li class="menu-item">
+              <a class="link link_menu_left" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu-item">
+              <a class="link link_menu_left" href="/">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
         <ul class="header_contact">
-          <li>
+          <li class="header-contact-item">
             <a class="link link_menu_right" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="header-contact-item">
             <a class="link link_menu_right" href="tel:+48111111111"
               >+48 111 111 111</a
             >
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
 
     <main>
       <section class="slider">
-        <h1 class="header_1">Efektywne rozwiązania dla waszego biznesu</h1>
+        <h1 class="header_1 slider_header">
+          Efektywne rozwiązania dla waszego biznesu
+        </h1>
         <button class="button_slider" type="button">Zamów usługe</button>
       </section>
 
-      <section>
-        <ul>
-          <li>
-            <h3 class="header_3">LOREM IPSUM</h3>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malescuada
-            </p>
-          </li>
-          <li>
-            <h3 class="header_3">LOREM IPSUM</h3>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malescuada
-            </p>
-          </li>
-          <li>
-            <h3 class="header_3">LOREM IPSUM</h3>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malescuada
-            </p>
-          </li>
-          <li>
-            <h3 class="header_3">LOREM IPSUM</h3>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malescuada
-            </p>
-          </li>
-        </ul>
+      <section class="section paragraphs">
+        <div class="container">
+          <ul class="paragraphs">
+            <li class="paragraphs-item">
+              <h3 class="header_3">LOREM IPSUM</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malescuada
+              </p>
+            </li>
+            <li class="paragraphs-item">
+              <h3 class="header_3">LOREM IPSUM</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malescuada
+              </p>
+            </li>
+            <li class="paragraphs-item">
+              <h3 class="header_3">LOREM IPSUM</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malescuada
+              </p>
+            </li>
+            <li class="paragraphs-item">
+              <h3 class="header_3">LOREM IPSUM</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malescuada
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section>
-        <h2 class="header_2">Czym się zajmujemy</h2>
-        <ul>
-          <li>
-            <img
-              src="images/img1.webp"
-              width="370"
-              height="294"
-              alt="Work on a tablet"
-            />
-          </li>
-          <li>
-            <img
-              src="images/img2.webp"
-              width="370"
-              height="294"
-              alt="Work on a phone and notebook"
-            />
-          </li>
-          <li>
-            <img
-              src="images/img3.webp"
-              width="370"
-              height="294"
-              alt="Color palette on tablet"
-            />
-          </li>
-        </ul>
+      <section class="section">
+        <div class="container">
+          <h2 class="header_2">Czym się zajmujemy</h2>
+          <ul class="images">
+            <li class="images_item">
+              <img
+                src="images/img1.webp"
+                width="370"
+                height="294"
+                alt="Work on a tablet"
+              />
+            </li>
+            <li class="images_item">
+              <img
+                src="images/img2.webp"
+                width="370"
+                height="294"
+                alt="Work on a phone and notebook"
+              />
+            </li>
+            <li class="images_item">
+              <img
+                src="images/img3.webp"
+                width="370"
+                height="294"
+                alt="Color palette on tablet"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section class="team">
-        <h2 class="header_2">Nasz zespół</h2>
-        <ul>
-          <li>
-            <figure class="list_crew">
-              <img
-                src="images/person1.webp"
-                width="270"
-                height="260"
-                alt="Man in shirt and glasses product designer"
-              />
-              <figcaption>
-                <p class="list_crew_upper">John Doe</p>
-                <p class="list_crew_lower">Product Designer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="list_crew">
-              <img
-                src="images/person2.webp"
-                width="270"
-                height="260"
-                alt="Women in suit and glasses frontend developer"
-              />
-              <figcaption>
-                <p class="list_crew_upper">John Doe</p>
-                <p class="list_crew_lower">Frontend Developer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="list_crew">
-              <img
-                src="images/person3.webp"
-                width="270"
-                height="260"
-                alt="Men in shirt marketing"
-              />
-              <figcaption>
-                <p class="list_crew_upper">John Doe</p>
-                <p class="list_crew_lower">Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="list_crew">
-              <img
-                src="images/person4.webp"
-                width="270"
-                height="260"
-                alt="Man in shirt and glasses UI designer"
-              />
-              <figcaption>
-                <p class="list_crew_upper">John Doe</p>
-                <p class="list_crew_lower">UI Designer</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+      <section class="section team">
+        <div class="container">
+          <h2 class="header_2">Nasz zespół</h2>
+          <ul class="crew">
+            <li class="crew_member">
+              <figure class="crew_member_figure">
+                <img
+                  src="images/person1.webp"
+                  width="270"
+                  height="260"
+                  alt="Man in shirt and glasses product designer"
+                />
+                <figcaption class="crew_member_description">
+                  <p class="list_crew_upper">John Doe</p>
+                  <p class="list_crew_lower">Product Designer</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="crew_member">
+              <figure class="crew_member_figure">
+                <img
+                  src="images/person2.webp"
+                  width="270"
+                  height="260"
+                  alt="Women in suit and glasses frontend developer"
+                />
+                <figcaption class="crew_member_description">
+                  <p class="list_crew_upper">John Doe</p>
+                  <p class="list_crew_lower">Frontend Developer</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="crew_member">
+              <figure class="crew_member_figure">
+                <img
+                  src="images/person3.webp"
+                  width="270"
+                  height="260"
+                  alt="Men in shirt marketing"
+                />
+                <figcaption class="crew_member_description">
+                  <p class="list_crew_upper">John Doe</p>
+                  <p class="list_crew_lower">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="crew_member">
+              <figure class="crew_member_figure">
+                <img
+                  src="images/person4.webp"
+                  width="270"
+                  height="260"
+                  alt="Man in shirt and glasses UI designer"
+                />
+                <figcaption class="crew_member_description">
+                  <p class="list_crew_upper">John Doe</p>
+                  <p class="list_crew_lower">UI Designer</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a class="link link_logo" href="/"
-        ><span class="logo_left_side">Web</span
-        ><span class="logo_footer_right_side">Studio</span></a
-      >
-      <address class="footer_contact_info">
-        <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-        <a class="link link_footer" href="mailto:info@example.com"
-          >info@example.com</a
-        >
-        <a class="link link_footer" href="tel:+48111111111">+48 111 111 111</a>
-      </address>
+      <div class="container">
+        <div class="footer_wrapper">
+          <a class="link link_logo logo_footer" href="/"
+            ><span class="logo_left_side">Web</span
+            ><span class="logo_footer_right_side">Studio</span></a
+          >
+          <address class="footer_contact_info">
+            <p class="address_footer">m. Warszawa, Aleje Jerozolimskie 21</p>
+            <a class="link link_footer" href="mailto:info@example.com"
+              ><p>info@example.com</p></a
+            >
+            <a class="link link_footer" href="tel:+48111111111"
+              ><p>+48 111 111 111</p></a
+            >
+          </address>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
