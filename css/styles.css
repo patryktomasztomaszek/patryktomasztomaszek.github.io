@@ -159,15 +159,15 @@ img {
 /* Header end */
 /* Slider */
 .slider {
+  background: #2f303a;
+}
+.container_slider {
   display: flex;
   height: 600px;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-
-  background: #2f303a;
 }
-
 .slider_header {
   width: 696px;
   align-self: auto;
