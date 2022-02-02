@@ -157,6 +157,7 @@ img {
   display: flex;
   align-items: center;
   color: #757575;
+  fill: #757575;
 }
 .link_menu_right_icon_envelope {
   margin-right: 10px;
@@ -173,6 +174,8 @@ img {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(/images/slider.webp);
   background-repeat: no-repeat;
+  max-width: 1600px;
+  margin: auto;
   background-position: center;
 }
 .container_slider {
@@ -395,6 +398,7 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
+  cursor: pointer;
 }
 .clients_list-item:hover {
   fill: #2196f3;
