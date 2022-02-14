@@ -22,7 +22,6 @@ ol {
   list-style: none;
 }
 /* Style reset end */
-
 /* Global */
 body {
   margin: 0;
@@ -43,12 +42,11 @@ body {
 .button {
   border: 0;
   cursor: pointer;
-
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
-
   background-color: #f5f4fa;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -56,7 +54,6 @@ body {
   color: white;
   box-shadow: 0px 3px 2px 0px #0000001f;
 }
-
 .header_1 {
   color: white;
   font-weight: 900;
@@ -82,6 +79,7 @@ img {
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link_footer {
   color: rgba(255, 255, 255, 0.6);
@@ -142,6 +140,7 @@ img {
 
 .menu-item {
   margin-right: 46px;
+  height: 100%;
 }
 
 .menu-item:last-child,
@@ -161,6 +160,7 @@ img {
 }
 .link_menu_right_icon_envelope {
   margin-right: 10px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link_menu_right:hover {
   fill: #2196f3;
@@ -263,8 +263,24 @@ img {
   list-style-type: none;
 }
 .images_item {
+  position: relative;
   display: inline-block;
   margin: 0 15px;
+}
+.images_text {
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 0;
+  padding: 24px;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 14px;
+  color: #fff;
+  font-style: bold;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 16px;
+  letter-spacing: 3%;
 }
 /* What we do end */
 /* Crew */
@@ -321,6 +337,7 @@ img {
 .crew_social-media_link_icon_envelope {
   fill: #afb1b8;
   border-radius: 50%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .crew_social-media_link_icon_envelope:hover,
 .crew_social-media_link_icon_envelope:focus {
@@ -360,13 +377,36 @@ img {
   flex-wrap: wrap;
 }
 .list_item {
+  position: relative;
   margin: 0 0 30px 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list_item:hover {
   box-shadow: 1px 4px 6px 0px #00000029;
 }
 .list_item:not(:nth-child(3n)) {
   margin-right: 30px;
+}
+.list_item-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 49px 24px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  background: linear-gradient(
+    180deg,
+    rgba(33, 150, 243, 0.9) 294px,
+    rgba(0, 0, 0, 0) 110px
+  );
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list_item-text:hover {
+  opacity: 1;
 }
 .list_description {
   border: 1px solid #eeeeee;
@@ -407,6 +447,7 @@ img {
 .clients_list-item_icon_envelope {
   width: 106px;
   height: 60px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Clients end */
@@ -461,16 +502,59 @@ img {
   fill: #ffffff;
   background: #ffffff1a;
   border-radius: 50%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer_social-media_link_icon_envelope:hover,
 .footer_social-media_link_icon_envelope:focus {
   background: #2196f3;
 }
 /* Footer end */
+/* Modal window */
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 500px;
+  background-color: #fff;
+}
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+  border: solid 1px #000;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #000;
+  fill: #000;
+}
+.close-button:hover {
+  border-color: #2196f3;
+  fill: #2196f3;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+/* Modal window end */
 /* SVG */
 .svg_envelope {
   width: 16px;
   height: 12px;
 }
 /* SVG end */
-/* My CSS is catastrpohic garbage, i know ;( */
+/* My CSS is catastrophic garbage, i know ;( */

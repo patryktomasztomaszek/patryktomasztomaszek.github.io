@@ -9,14 +9,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/chrome-transition-bug-fix.js"></script>
   </head>
 
-  <body>
+  <body class="preload">
     <header class="header">
       <div class="container">
         <a class="link link_logo" href="/"
@@ -26,7 +27,9 @@
         <nav class="nav">
           <ul class="menu">
             <li class="menu-item">
-              <a class="link link_menu_left" href="index.html">Agencja</a>
+              <a class="link link_menu_left link_active" href="index.html"
+                >Agencja</a
+              >
             </li>
             <li class="menu-item">
               <a class="link link_menu_left" href="portfolio.html">Portfolio</a>
@@ -67,7 +70,9 @@
           <h1 class="header_1 slider_header">
             Efektywne rozwiązania dla waszego biznesu
           </h1>
-          <button class="button_slider" type="button">Zamów usługe</button>
+          <button class="button_slider" type="button" data-modal-open>
+            Zamów usługe
+          </button>
         </div>
       </section>
 
@@ -131,6 +136,7 @@
           <h2 class="header_2">Czym się zajmujemy</h2>
           <ul class="images">
             <li class="images_item">
+              <p class="images_text">aplikacje komputerowe</p>
               <img
                 src="images/img1.webp"
                 width="370"
@@ -139,6 +145,7 @@
               />
             </li>
             <li class="images_item">
+              <p class="images_text">aplikacje mobilne</p>
               <img
                 src="images/img2.webp"
                 width="370"
@@ -147,6 +154,7 @@
               />
             </li>
             <li class="images_item">
+              <p class="images_text">rozwiązania graficzne</p>
               <img
                 src="images/img3.webp"
                 width="370"
@@ -548,5 +556,13 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <svg class="close-button" data-modal-close>
+          <use use href="images/sprite.svg#icon-close-button"></use>
+        </svg>
+      </div>
+    </div>
+    <script src="js/modal.js"></script>
   </body>
 </html>
