@@ -283,8 +283,130 @@
             </li>
           </ul>
         </div>
+        <div class="footer_wrapper">
+          <form action="newsletter">
+            <label for="email"
+              ><h2 class="footer_newsletter-header">
+                Zapisz się do newslettera
+              </h2></label
+            >
+            <input
+              class="footer_newsletter-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              required
+            />
+            <button class="footer_newsletter-button">
+              <span>Zapisz się</span>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <script></script>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <svg class="close-button" data-modal-close>
+          <use use href="images/sprite.svg#icon-close-button"></use>
+        </svg>
+        <h2 class="contact-form_header">
+          Zostaw swoje dane w formularzu poniżej
+        </h2>
+        <form action="contact-form" class="contact-form">
+          <label class="contact-form_label" for="name">Imię</label>
+          <div class="input-wrapper">
+            <svg class="contact-form_input-icon" width="40" height="40">
+              <use
+                class="contact-form_input-icon_svg"
+                use
+                href="/images/icons.svg#icon-icon-person"
+              ></use>
+            </svg>
+            <input
+              class="contact-form_input"
+              type="text"
+              name="name"
+              id="name"
+              required
+            />
+          </div>
+          <label class="contact-form_label" for="tel">Telefon</label>
+          <div class="input-wrapper">
+            <input
+              class="contact-form_input"
+              type="tel"
+              name="tel"
+              id="tel"
+              required
+            />
+            <svg class="contact-form_input-icon" width="40" height="40">
+              <use
+                class="contact-form_input-icon_svg"
+                use
+                href="/images/icons.svg#icon-icon-phone"
+                required
+              ></use>
+            </svg>
+          </div>
+          <label class="contact-form_label" for="email">Email</label>
+          <div class="input-wrapper">
+            <svg class="contact-form_input-icon" width="40" height="40">
+              <use
+                class="contact-form_input-icon_svg"
+                use
+                href="/images/icons.svg#icon-icon-mail"
+              ></use>
+            </svg>
+            <input
+              class="contact-form_input"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <label class="contact-form_label" for="comment">Komentarz</label
+          ><textarea
+            class="contact-form_textarea"
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="10"
+            placeholder="Wprowadź tekst"
+            required
+          ></textarea>
+
+          <div class="contact-form_checkbox-wrapper">
+            <div class="contact-form_checkbox-frame">
+              <input
+                class="contact-form_regulations-checkbox"
+                type="checkbox"
+                name="regulations-checkbox"
+                id="regulations-checkbox"
+                required
+              />
+            </div>
+            <label
+              class="contact-form_regulations-checkbox_text"
+              for="regulations-checkbox"
+              >Oświadczam, iż akceptuję
+              <a class="contact-form_regulations-checkbox_link" href="/"
+                >Regulamin</a
+              >
+              i
+              <a class="contact-form_regulations-checkbox_link" href="/"
+                >Politykę Prywatności</a
+              >.</label
+            >
+          </div>
+
+          <button class="button contact-form_button" type="submit">
+            Wyślij
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="js/modal.js"></script>
   </body>
 </html>
