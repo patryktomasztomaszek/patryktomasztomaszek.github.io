@@ -1,0 +1,59 @@
+.crew {
+  background: $bg-color3;
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__member {
+    margin: 0 15px;
+    background: $bg-color1;
+    box-shadow: $box-shadow1;
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__figure {
+    margin: 0;
+  }
+  &__social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  &__description {
+    text-align: center;
+  }
+  .description {
+    &--upper {
+      font-weight: $font-weight-500;
+      font-size: $font-size2;
+      line-height: 1.19;
+      margin: 30px 0 10px 0;
+    }
+    &--lower {
+      color: $font-color3;
+      font-size: $font-size2;
+      line-height: 1.19;
+      margin: 10px 0 16px 0;
+    }
+  }
+  &__social-media-item {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  &__icon {
+    fill: $icon-color2;
+    border-radius: 50%;
+    transition: $transition;
+    &:hover,
+    &:focus {
+      fill: $icon-color3;
+      background: $bg-color7;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #ececec;
+  &__contact {
+    font-weight: $font-weight-500;
+    align-self: center;
+    margin: 0 0 0 auto;
+    .contact__item {
+      display: inline-block;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+}
+.nav {
+  align-self: center;
+  position: relative;
+  height: 100%;
+  display: flex;
+}
+.menu {
+  align-self: center;
+  position: relative;
+  height: 100%;
+  display: flex;
+  &__item {
+    font-weight: $font-weight-500;
+    margin-right: 46px;
+    align-self: center;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  &__link {
+    color: $font-color1;
+  }
+  .link--active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 54px;
+    height: 4px;
+    background: $link-underscore-color;
+    border-radius: 8px;
+    bottom: -1px;
+  }
+}
+.contact {
+  &__item {
+    margin-right: 50px;
+    letter-spacing: $letter-spacing1;
+    align-content: center;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    color: $icon-color1;
+    fill: $icon-color1;
+  }
+  &__icon {
+    margin-right: 10px;
+    transition: $transition;
+  }
+}

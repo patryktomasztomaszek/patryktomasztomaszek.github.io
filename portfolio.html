@@ -13,45 +13,42 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
-  <body class="preload">
+  <body>
     <header class="header">
       <div class="container">
-        <a class="link link_logo" href="/"
-          ><span class="logo_left_side">Web</span
-          ><span class="logo_header_right_side">Studio</span></a
+        <a class="link logo" href="/"
+          ><span class="logo__left-side">Web</span
+          ><span class="logo__right-side--header">Studio</span></a
         >
         <nav class="nav">
           <ul class="menu">
-            <li class="menu-item">
-              <a class="link link_menu_left" href="index.html">Agencja</a>
+            <li class="menu__item">
+              <a class="link menu__link" href="index.html">Agencja</a>
             </li>
-            <li class="menu-item link-active">
-              <a class="link link_menu_left" href="portfolio.html">Portfolio</a>
+            <li class="menu__item link--active">
+              <a class="link menu__link" href="portfolio.html">Portfolio</a>
             </li>
-            <li class="menu-item">
-              <a class="link link_menu_left" href="/">Kontakt</a>
+            <li class="menu__item">
+              <a class="link menu__link" href="/">Kontakt</a>
             </li>
           </ul>
         </nav>
-        <ul class="header_contact">
-          <li class="header-contact-item">
-            <a class="link link_menu_right" href="mailto:info@devstudio.com"
-              ><svg
-                class="link_menu_right_icon_envelope"
-                width="16"
-                height="12"
-              >
+        <ul class="header__contact">
+          <li class="contact__item">
+            <a class="link contact__link" href="mailto:info@devstudio.com"
+              ><svg class="contact__icon" width="16" height="12">
                 <use href="images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="header-contact-item">
-            <a class="link link_menu_right" href="tel:+48111111111">
-              <svg class="link_menu_right_icon_envelope" width="10" height="16">
+          <li class="contact__item">
+            <a class="link contact__link" href="tel:+48111111111">
+              <svg class="contact__icon" width="10" height="16">
                 <use href="images/sprite.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -62,23 +59,43 @@
     </header>
 
     <main>
-      <section class="section section_portfolio">
+      <section class="filter">
         <div class="container">
-          <ul class="list buttons">
-            <li><button class="button" type="button">Wszystkie</button></li>
-            <li><button class="button" type="button">Strony</button></li>
-            <li><button class="button" type="button">Aplikacje</button></li>
-            <li><button class="button" type="button">Dizajn</button></li>
-            <li><button class="button" type="button">Marketing</button></li>
+          <ul class="filter__buttons">
+            <li>
+              <button class="button filter__button" type="button">
+                Wszystkie
+              </button>
+            </li>
+            <li>
+              <button class="button filter__button" type="button">
+                Strony
+              </button>
+            </li>
+            <li>
+              <button class="button filter__button" type="button">
+                Aplikacje
+              </button>
+            </li>
+            <li>
+              <button class="button filter__button" type="button">
+                Dizajn
+              </button>
+            </li>
+            <li>
+              <button class="button filter__button" type="button">
+                Marketing
+              </button>
+            </li>
           </ul>
         </div>
       </section>
-      <section class="portfolio">
+      <section>
         <div class="container">
-          <ul class="list">
-            <li class="list_item">
+          <ul class="portfolio">
+            <li class="portfolio__item">
               <div class="overflow">
-                <p class="list_item-text">Teraz MUSI być dobrze!</p>
+                <p class="portfolio__text">Teraz MUSI być dobrze!</p>
                 <img
                   src="images/img4.webp"
                   width="370"
@@ -86,14 +103,14 @@
                   alt="Techhnocrack website"
                 />
               </div>
-              <div class="list_description">
-                <p class="list_description_upper">Technocrack</p>
-                <p class="list_description_lower">Strona internetowa</p>
+              <div class="portfolio__description">
+                <p class="portfolio__description--upper">Technocrack</p>
+                <p class="portfolio__description--lower">Strona internetowa</p>
               </div>
             </li>
-            <li class="list_item">
+            <li class="portfolio__item">
               <div class="overflow">
-                <p class="list_item-text">Teraz MUSI być dobrze!</p>
+                <p class="portfolio__text">Teraz MUSI być dobrze!</p>
                 <img
                   src="images/img5.webp"
                   width="370"
@@ -101,16 +118,16 @@
                   alt="Image of two basketball players"
                 />
               </div>
-              <div class="list_description">
-                <p class="list_description_upper">
+              <div class="portfolio__description">
+                <p class="portfolio__description--upper">
                   Grafika New Orlean vs Golden Star
                 </p>
-                <p class="list_description_lower">Dizajn</p>
+                <p class="portfolio__description--lower">Dizajn</p>
               </div>
             </li>
-            <li class="list_item">
+            <li class="portfolio__item">
               <div class="overflow">
-                <p class="list_item-text">Teraz MUSI być dobrze!</p>
+                <p class="portfolio__text">Teraz MUSI być dobrze!</p>
                 <img
                   src="images/img6.webp"
                   width="370"
@@ -118,14 +135,14 @@
                   alt="Seafood restaurant logo"
                 />
               </div>
-              <div class="list_description">
-                <p class="list_description_upper">Restauracja Seafood</p>
-                <p class="list_description_lower">Aplikacja</p>
+              <div class="portfolio__description">
+                <p class="portfolio__description--upper">Restauracja Seafood</p>
+                <p class="portfolio__description--lower">Aplikacja</p>
               </div>
             </li>
-            <li class="list_item">
+            <li class="portfolio__item">
               <div class="overflow">
-                <p class="list_item-text">Teraz MUSI być dobrze!</p>
+                <p class="portfolio__text">Teraz MUSI być dobrze!</p>
                 <img
                   src="images/img7.webp"
                   width="370"
@@ -133,14 +150,14 @@
                   alt="Headphones"
                 />
               </div>
-              <div class="list_description">
-                <p class="list_description_upper">Projekt Prime</p>
-                <p class="list_description_lower">Marketing</p>
+              <div class="portfolio__description">
+                <p class="portfolio__description--upper">Projekt Prime</p>
+                <p class="portfolio__description--lower">Marketing</p>
               </div>
             </li>
-            <li class="list_item">
+            <li class="portfolio__item">
               <div class="overflow">
-                <p class="list_item-text">Teraz MUSI być dobrze!</p>
+                <p class="portfolio__text">Teraz MUSI być dobrze!</p>
                 <img
                   src="images/img8.webp"
                   width="370"
@@ -148,14 +165,14 @@
                   alt="White and bronze boxes"
                 />
               </div>
-              <div class="list_description">
-                <p class="list_description_upper">Projekt Boxes</p>
-                <p class="list_description_lower">Aplikacja</p>
+              <div class="portfolio__description">
+                <p class="portfolio__description--upper">Projekt Boxes</p>
+                <p class="portfolio__description--lower">Aplikacja</p>
               </div>
             </li>
-            <li class="list_item">
+            <li class="portfolio__item">
               <div class="overflow">
-                <p class="list_item-text">Teraz MUSI być dobrze!</p>
+                <p class="portfolio__text">Teraz MUSI być dobrze!</p>
                 <img
                   src="images/img9.webp"
                   width="370"
@@ -163,14 +180,16 @@
                   alt="Apple monitor"
                 />
               </div>
-              <div class="list_description">
-                <p class="list_description_upper">Inspiration has no Borders</p>
-                <p class="list_description_lower">Strona Internetowa</p>
+              <div class="portfolio__description">
+                <p class="portfolio__description--upper">
+                  Inspiration has no Borders
+                </p>
+                <p class="portfolio__description--lower">Strona Internetowa</p>
               </div>
             </li>
-            <li class="list_item">
+            <li class="portfolio__item">
               <div class="overflow">
-                <p class="list_item-text">Teraz MUSI być dobrze!</p>
+                <p class="portfolio__text">Teraz MUSI być dobrze!</p>
                 <img
                   src="images/img10.webp"
                   width="370"
@@ -178,14 +197,16 @@
                   alt="Book with images"
                 />
               </div>
-              <div class="list_description">
-                <p class="list_description_upper">Magazyn Limited Edition</p>
-                <p class="list_description_lower">Dizajn</p>
+              <div class="portfolio__description">
+                <p class="portfolio__description--upper">
+                  Magazyn Limited Edition
+                </p>
+                <p class="portfolio__description--lower">Dizajn</p>
               </div>
             </li>
-            <li class="list_item">
+            <li class="portfolio__item">
               <div class="overflow">
-                <p class="list_item-text">Teraz MUSI być dobrze!</p>
+                <p class="portfolio__text">Teraz MUSI być dobrze!</p>
                 <img
                   src="images/img11.webp"
                   width="370"
@@ -193,14 +214,14 @@
                   alt="Tag with text"
                 />
               </div>
-              <div class="list_description">
-                <p class="list_description_upper">Projekt LAB</p>
-                <p class="list_description_lower">Marketing</p>
+              <div class="portfolio__description">
+                <p class="portfolio__description--upper">Projekt LAB</p>
+                <p class="portfolio__description--lower">Marketing</p>
               </div>
             </li>
-            <li class="list_item">
+            <li class="portfolio__item">
               <div class="overflow">
-                <p class="list_item-text">Teraz MUSI być dobrze!</p>
+                <p class="portfolio__text">Teraz MUSI być dobrze!</p>
                 <img
                   src="images/img12.webp"
                   width="370"
@@ -208,9 +229,9 @@
                   alt="Work on notebook"
                 />
               </div>
-              <div class="list_description">
-                <p class="list_description_upper">Growing Business</p>
-                <p class="list_description_lower">Aplikacja</p>
+              <div class="portfolio__description">
+                <p class="portfolio__description--upper">Growing Business</p>
+                <p class="portfolio__description--lower">Aplikacja</p>
               </div>
             </li>
           </ul>
@@ -218,195 +239,78 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer_container">
-        <div class="footer_wrapper">
-          <a class="link link_logo logo_footer" href="/"
-            ><span class="logo_left_side">Web</span
-            ><span class="logo_footer_right_side">Studio</span></a
+      <div class="container footer__container">
+        <div class="footer__item">
+          <a class="link logo" href="/"
+            ><span class="logo__left-side">Web</span
+            ><span class="logo__right-side--footer">Studio</span></a
           >
-          <address class="footer_contact_info">
-            <p class="address_footer">m. Warszawa, Aleje Jerozolimskie 21</p>
-            <a class="link link_footer" href="mailto:info@example.com"
+          <address class="footer__contact-info">
+            <p class="contact-info__address">
+              m. Warszawa, Aleje Jerozolimskie 21
+            </p>
+            <a class="link contact-info__link" href="mailto:info@example.com"
               ><p>info@example.com</p></a
             >
-            <a class="link link_footer" href="tel:+48111111111"
+            <a class="link contact-info__link" href="tel:+48111111111"
               ><p>+48 111 111 111</p></a
             >
           </address>
         </div>
-        <div class="footer_wrapper">
-          <p class="footer_social-media_text">DOŁĄCZ DO NAS</p>
-          <ul class="footer_social-media">
-            <li class="footer_social-media_item">
-              <a class="footer_social-media_link" href="/">
-                <svg
-                  class="footer_social-media_link_icon_envelope"
-                  width="44"
-                  height="44"
-                >
+        <div class="footer__item">
+          <p class="footer__social-media-text">DOŁĄCZ DO NAS</p>
+          <ul class="footer__social-media">
+            <li class="social-media__item">
+              <a href="/">
+                <svg class="social-media__icon" width="44" height="44">
                   <use use href="images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer_social-media_item">
-              <a class="footer_social-media_link" href="/">
-                <svg
-                  class="footer_social-media_link_icon_envelope"
-                  width="44"
-                  height="44"
-                >
+            <li class="social-media__item">
+              <a href="/">
+                <svg class="social-media__icon" width="44" height="44">
                   <use use href="images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer_social-media_item">
-              <a class="footer_social-media_link" href="/">
-                <svg
-                  class="footer_social-media_link_icon_envelope"
-                  width="44"
-                  height="44"
-                >
+            <li class="social-media__item">
+              <a href="/">
+                <svg class="social-media__icon" width="44" height="44">
                   <use use href="images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer_social-media_item">
-              <a class="footer_social-media_link" href="/">
-                <svg
-                  class="footer_social-media_link_icon_envelope"
-                  width="44"
-                  height="44"
-                >
+            <li class="social-media__item">
+              <a href="/">
+                <svg class="social-media__icon" width="44" height="44">
                   <use use href="images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer_wrapper">
+        <div class="footer__item">
           <form action="newsletter">
             <label for="email"
-              ><h2 class="footer_newsletter-header">
+              ><h2 class="newsletter__header">
                 Zapisz się do newslettera
               </h2></label
             >
             <input
-              class="footer_newsletter-input"
+              class="newsletter__input"
               type="email"
               name="email"
               id="email"
               placeholder="E-mail"
               required
             />
-            <button class="footer_newsletter-button">
+            <button class="newsletter__button">
               <span>Zapisz się</span>
             </button>
           </form>
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <svg class="close-button" data-modal-close>
-          <use use href="images/sprite.svg#icon-close-button"></use>
-        </svg>
-        <h2 class="contact-form_header">
-          Zostaw swoje dane w formularzu poniżej
-        </h2>
-        <form action="contact-form" class="contact-form">
-          <label class="contact-form_label" for="name">Imię</label>
-          <div class="input-wrapper">
-            <svg class="contact-form_input-icon" width="40" height="40">
-              <use
-                class="contact-form_input-icon_svg"
-                use
-                href="/images/icons.svg#icon-icon-person"
-              ></use>
-            </svg>
-            <input
-              class="contact-form_input"
-              type="text"
-              name="name"
-              id="name"
-              required
-            />
-          </div>
-          <label class="contact-form_label" for="tel">Telefon</label>
-          <div class="input-wrapper">
-            <input
-              class="contact-form_input"
-              type="tel"
-              name="tel"
-              id="tel"
-              required
-            />
-            <svg class="contact-form_input-icon" width="40" height="40">
-              <use
-                class="contact-form_input-icon_svg"
-                use
-                href="/images/icons.svg#icon-icon-phone"
-                required
-              ></use>
-            </svg>
-          </div>
-          <label class="contact-form_label" for="email">Email</label>
-          <div class="input-wrapper">
-            <svg class="contact-form_input-icon" width="40" height="40">
-              <use
-                class="contact-form_input-icon_svg"
-                use
-                href="/images/icons.svg#icon-icon-mail"
-              ></use>
-            </svg>
-            <input
-              class="contact-form_input"
-              type="email"
-              name="email"
-              id="email"
-              required
-            />
-          </div>
-          <label class="contact-form_label" for="comment">Komentarz</label
-          ><textarea
-            class="contact-form_textarea"
-            name="comment"
-            id="comment"
-            cols="30"
-            rows="10"
-            placeholder="Wprowadź tekst"
-            required
-          ></textarea>
-
-          <div class="contact-form_checkbox-wrapper">
-            <div class="contact-form_checkbox-frame">
-              <input
-                class="contact-form_regulations-checkbox"
-                type="checkbox"
-                name="regulations-checkbox"
-                id="regulations-checkbox"
-                required
-              />
-            </div>
-            <label
-              class="contact-form_regulations-checkbox_text"
-              for="regulations-checkbox"
-              >Oświadczam, iż akceptuję
-              <a class="contact-form_regulations-checkbox_link" href="/"
-                >Regulamin</a
-              >
-              i
-              <a class="contact-form_regulations-checkbox_link" href="/"
-                >Politykę Prywatności</a
-              >.</label
-            >
-          </div>
-
-          <button class="button contact-form_button" type="submit">
-            Wyślij
-          </button>
-        </form>
-      </div>
-    </div>
-    <script src="js/modal.js"></script>
   </body>
 </html>
