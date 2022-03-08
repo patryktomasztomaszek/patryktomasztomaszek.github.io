@@ -1,3 +1,6 @@
+#what-we-do {
+  display: none;
+}
 .what-we-do {
   display: flex;
   flex-wrap: wrap;
@@ -27,7 +30,11 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  #what-we-do {
+    display: flex;
+  }
   .what-we-do {
+    display: flex;
     &__item {
       margin-bottom: 0;
       margin-right: 30px;

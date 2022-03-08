@@ -26,11 +26,11 @@
         >
         <nav class="nav">
           <ul class="menu">
-            <li class="menu__item link--active">
+            <li class="menu__item">
               <a class="link menu__link" href="index.html">Agencja</a>
             </li>
             <li class="menu__item">
-              <a class="link menu__link" href="portfolio.html">Portfolio</a>
+              <a class="link menu__link link--active" href="portfolio.html">Portfolio</a>
             </li>
             <li class="menu__item">
               <a class="link menu__link" href="/">Kontakt</a>
@@ -55,7 +55,43 @@
             >
           </li>
         </ul>
-        <button class="menu--mobile"></button>
+        <button class="menu__button" menu-open></button>
+        <div class="menu--mobile is-hidden" menu-modal>
+          <button class="menu__close" menu-close></button>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="link menu__link" href="index.html">Agencja</a>
+            </li>
+            <li class="menu__item link--active">
+              <a class="link menu__link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu__item">
+              <a class="link menu__link" href="/">Kontakt</a>
+            </li>
+          </ul>
+          <div class="menu__contact">
+            <a class="contact--phone" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+            <a class="contact--mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </div>
+          <ul class="menu__social-media">
+            <li class="social-media__item">
+              <a class="social-media__link" href="/">Instagram</a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__link" href="/">Twitter</a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__link" href="/">Facebook</a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__link" href="/">Linkedin</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -311,5 +347,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
   </body>
 </html>

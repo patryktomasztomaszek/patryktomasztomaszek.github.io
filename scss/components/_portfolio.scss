@@ -1,14 +1,18 @@
+section {
+  padding: 60px 0 40px 0;
+}
 .filter {
   padding-bottom: 50px;
   &__buttons {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
   }
   &__button {
     background: $button-bg-color1;
     border-radius: 4px;
     padding: 6px 22px;
-    margin: 0 4px;
     letter-spacing: $letter-spacing2;
     &:hover {
       background: #2196f3;
@@ -71,4 +75,6 @@
       letter-spacing: $letter-spacing2;
     }
   }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 }
