@@ -3,17 +3,20 @@
   &__container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   &__item {
-    padding: 60px 0px;
-    &:not(:first-child) {
-      padding-left: 0;
-    }
-    &:not(:last-child) {
-      margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    &:last-of-type {
+      margin-bottom: 60px;
     }
   }
   &__contact-info {
+    text-align: center;
     margin-top: 30px;
   }
   .contact-info {
@@ -50,52 +53,85 @@
       }
     }
   }
-  .newsletter {
-    display: flex;
-    flex-direction: row;
-    &__header {
-      font-weight: bold;
-      font-size: $font-size1;
-      letter-spacing: $letter-spacing2;
-      text-transform: uppercase;
-      color: $font-color4;
-      margin-bottom: 20px;
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  &__header {
+    font-weight: bold;
+    font-size: $font-size1;
+    letter-spacing: $letter-spacing2;
+    text-transform: uppercase;
+    color: $font-color4;
+    margin: 0;
+  }
+  &__input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 15px;
+    background: none;
+    outline: none;
+    color: $font-color4;
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
     }
-    &__input {
-      width: 358px;
-      height: 50px;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      border-radius: 4px;
-      padding: 15px;
-      background: none;
-      outline: none;
-      color: $font-color4;
-      &::placeholder {
-        color: rgba(255, 255, 255, 0.6);
+  }
+  &__button {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    cursor: $cursor;
+    width: 200px;
+    height: 50px;
+    background: $button-bg-color2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0;
+    border-radius: 4px;
+    color: $font-color4;
+    font-weight: bold;
+    font-size: $font-size2;
+    letter-spacing: 0.06em;
+    &::after {
+      content: url(/images/icons/send.svg);
+      fill: #fff;
+      width: 24px;
+      height: 24px;
+      margin-left: 24px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__container {
+      justify-content: space-around;
+    }
+    &__item {
+      padding: 30px 20px;
+      align-items: flex-start;
+
+      &:last-of-type {
+        margin: 0;
       }
     }
-    &__button {
-      display: inline-flex;
-      justify-content: center;
-      flex-direction: row;
-      align-items: center;
-      cursor: $cursor;
-      width: 200px;
-      height: 50px;
-      background: $button-bg-color2;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      border: 0;
-      border-radius: 4px;
-      color: $font-color4;
-      font-weight: bold;
-      font-size: $font-size2;
-      letter-spacing: 0.06em;
-      &::after {
-        content: url(/images/icons/send.svg);
-        fill: #fff;
-        width: 24px;
-        height: 24px;
-        margin-left: 24px;
+    & .logo {
+      align-self: flex-start;
+    }
+    &__contact-info {
+      text-align: left;
+    }
+    .newsletter {
+      display: block;
+      &__header {
+        text-align: left;
+        margin-bottom: 20px;
       }
     }
   }

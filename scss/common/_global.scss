@@ -1,4 +1,4 @@
-/* Style reset */
+// Style reset
 h1,
 h2,
 h3,
@@ -19,7 +19,7 @@ li,
 .list {
   list-style: none;
 }
-/* Style reset END */
+
 /* Global */
 body {
   margin: 0;
@@ -29,9 +29,20 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 480px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 section {
@@ -94,11 +105,11 @@ label {
 }
 
 .logo {
+  display: block;
   align-self: center;
   font-family: Raleway, serif;
   font-size: 26px;
   line-height: 1.19;
-  margin-right: 93px;
   letter-spacing: 0.03em;
   &__left-side {
     color: #2196f3;
