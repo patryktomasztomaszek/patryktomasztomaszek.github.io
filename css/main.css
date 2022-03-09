@@ -233,7 +233,7 @@ label {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 30px;
+  padding: 20px;
   background: #ffffff;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -340,13 +340,17 @@ label {
   position: relative;
 }
 
-.menu--mobile .menu__social-media .social-media__item:not(:last-of-type)::after {
+.menu--mobile .menu__social-media .social-media__separator {
+  position: relative;
+}
+
+.menu--mobile .menu__social-media .social-media__separator:not(:last-of-type)::after {
+  display: block;
   position: absolute;
   content: "";
   width: 1px;
   height: 19px;
   top: 0;
-  right: -4vw;
   background: rgba(33, 33, 33, 0.2);
 }
 
@@ -1291,6 +1295,9 @@ section {
   display: -ms-flexbox;
   display: flex;
   justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1302,7 +1309,8 @@ section {
 
 .portfolio__item {
   position: relative;
-  margin: 0 0 30px 0;
+  max-width: 320px;
+  margin: 15px;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
@@ -1318,15 +1326,11 @@ section {
           transform: translateY(0);
 }
 
-.portfolio__item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-
 .portfolio__text {
   position: absolute;
   top: 0;
   left: 0;
-  width: 370px;
+  width: 320px;
   height: 294px;
   padding: 49px 24px;
   color: #ffffff;
@@ -1355,5 +1359,43 @@ section {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.portfolio__image {
+  width: 100%;
+  text-align: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filter__buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .portfolio__item:first-of-type .portfolio__description {
+    height: 150.44px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    max-width: 370px;
+    margin: 0 0 30px 0;
+  }
+  .portfolio__item:not(:nth-of-type(3n)) {
+    margin: 0 30px 30px 0;
+  }
+  .filter__buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
